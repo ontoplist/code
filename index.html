@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OnToplist.com - Public Repository</title>
+<meta name="description" content="Public GitHub repository for OnToplist.com. Track code changes, report bugs, and suggest improvements to the business and blog directory platform.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #555;
+    --accent: #0066cc;
+    --accent-hover: #004999;
+    --border: #e5e5e5;
+    --card-bg: #fafafa;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 2rem 1.5rem;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .tagline {
+    color: var(--muted);
+    font-size: 1.05rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    color: var(--text);
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+  }
+
+  .links {
+    display: grid;
+    gap: 0.75rem;
+    margin: 1rem 0 2rem;
+  }
+
+  .link-card {
+    display: block;
+    padding: 1rem 1.25rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    transition: border-color 0.15s, transform 0.15s;
+  }
+
+  .link-card:hover {
+    border-color: var(--accent);
+    text-decoration: none;
+    transform: translateX(2px);
+  }
+
+  .link-title {
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 0.25rem;
+  }
+
+  .link-desc {
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  code {
+    background: var(--card-bg);
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.9em;
+    border: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>OnToplist.com</h1>
+      <p class="tagline">Public repository for code changes, improvements, and community feedback.</p>
+    </header>
+
+    <p>Welcome. This repository is where I share updates to the OnToplist.com platform, an established business and blog directory. The goal is transparency: users can see what's changing, report issues, and suggest improvements.</p>
+
+    <h2>Quick Links</h2>
+    <div class="links">
+      <a href="https://www.ontoplist.com/" class="link-card">
+        <div class="link-title">OnToplist.com — Main Site</div>
+        <div class="link-desc">Browse the directory, search listings, and submit your business or blog.</div>
+      </a>
+      <a href="https://www.ontoplist.com/lastupdated_listings.xml" class="link-card">
+        <div class="link-title">Recently Updated Listings (Sitemap)</div>
+        <div class="link-desc">Track the latest listing updates across the directory in XML format.</div>
+      </a>
+    </div>
+
+    <h2>How to Contribute</h2>
+    <p>Feedback is welcome from anyone using the site. A few ways to get involved:</p>
+    <ul>
+      <li><strong>Report a bug:</strong> Open an issue describing what happened, what you expected, and how to reproduce it.</li>
+      <li><strong>Suggest an improvement:</strong> Have an idea for a feature or a better way to do something? Open an issue with the <code>enhancement</code> label.</li>
+      <li><strong>Review changes:</strong> Watch this repo to get notified when code or content updates ship.</li>
+    </ul>
+
+    <h2>About This Repo</h2>
+    <p>OnToplist.com is maintained by a single developer. Code shared here reflects real changes deployed to production. This page is a placeholder while the repository structure is being organized. More documentation will be added over time.</p>
+
+    <footer>
+      <p>&copy; <span id="year"></span> OnToplist.com · <a href="https://www.ontoplist.com/">ontoplist.com</a></p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
